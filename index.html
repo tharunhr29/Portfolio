@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tharun H R | Elite Full Stack MERN Developer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Tharun H R, a premium Full Stack MERN Developer based in Mysuru, Karnataka. Specializing in React.js, Node.js, Express, MongoDB, Socket.IO, and scalable SaaS architectures.">
+  <meta name="keywords"
+    content="Tharun H R, Full Stack Developer, MERN Developer, Web Developer Portfolio, React.js, Node.js, Express.js, MongoDB, Mysuru Developer, Karnataka India, Software Engineer Portfolio">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tharunhr.dev/">
+  <meta property="og:title" content="Tharun H R | Elite Full Stack MERN Developer">
+  <meta property="og:description"
+    content="Building scalable full stack applications with modern MERN technologies, real-time web sockets, and high-performance interfaces.">
+  <meta property="og:image" content="assets/images/safeguard.svg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://tharunhr.dev/">
+  <meta property="twitter:title" content="Tharun H R | Elite Full Stack MERN Developer">
+  <meta property="twitter:description"
+    content="Building scalable full stack applications with modern MERN technologies, real-time web sockets, and high-performance interfaces.">
+  <meta property="twitter:image" content="assets/images/safeguard.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@0.350.0"></script>
+  <script type="module" crossorigin src="/Portfolio/assets/index-CVU4RGG2.js"></script>
+  <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-CqIlvgRR.css">
+</head>
+
+<body>
+
+  <!-- Custom Custom Cursor -->
+  <div id="custom-cursor" class="cursor-dot"></div>
+  <div id="custom-cursor-follower" class="cursor-follower"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress-container">
+    <div id="scroll-progress-bar"></div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="navbar-header">
+    <div class="navbar-container">
+      <a href="#hero" class="navbar-logo" aria-label="Tharun H R Logo">
+        <span class="logo-accent">&lt;</span>THARUN H R<span class="logo-accent"> /&gt;</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#tech-stack" class="nav-link">Tech</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link-cta">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light/dark theme">
+          <i data-lucide="moon" class="toggle-icon-dark"></i>
+          <i data-lucide="sun" class="toggle-icon-light"></i>
+        </button>
+
+        <!-- Mobile Menu Hamburger -->
+        <button id="mobile-menu-toggle" class="mobile-toggle-btn" aria-label="Toggle navigation menu"
+          aria-expanded="false" aria-controls="nav-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <canvas id="canvas-particles"></canvas>
+      <div class="hero-glow-1"></div>
+      <div class="hero-glow-2"></div>
+
+      <div class="hero-content-container">
+        <!-- Badge -->
+        <div class="hero-badge reveal-fade-up">
+          <span class="pulse-indicator"></span>
+          Available for Opportunities
+        </div>
+
+        <!-- Name Reveal -->
+        <h1 class="hero-title reveal-fade-up">
+          Hi, I am <span class="text-gradient">THARUN H R</span>
+        </h1>
+
+        <!-- Typing Title -->
+        <div class="hero-subtitle-container reveal-fade-up">
+          <span class="subtitle-static">A passionate </span>
+          <span id="typing-text" class="subtitle-dynamic text-gradient-cyan"></span>
+          <span class="typing-cursor">|</span>
+        </div>
+
+        <!-- Tagline -->
+        <p class="hero-tagline reveal-fade-up">
+          Building Scalable Full Stack Applications with Modern Technologies. Specialize in MERN, Web Sockets, and
+          high-fidelity interactive user interfaces.
+        </p>
+
+        <!-- CTAs -->
+        <div class="hero-ctas reveal-fade-up">
+          <a href="#projects" class="btn-primary">
+            View Projects <i data-lucide="arrow-right" class="btn-icon"></i>
+          </a>
+          <a href="#contact" class="btn-secondary">
+            Contact Me <i data-lucide="message-square" class="btn-icon"></i>
+          </a>
+          <a href="assets/resume.pdf" download="Tharun_HR_Resume.pdf" class="btn-tertiary">
+            Download Resume <i data-lucide="download" class="btn-icon"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Floating Tech Icons background elements -->
+      <div class="floating-tech-container">
+        <div class="floating-icon tech-react" style="--delay: 0s; --x: 15%; --y: 20%;"><i data-lucide="atom"></i></div>
+        <div class="floating-icon tech-node" style="--delay: 2s; --x: 80%; --y: 15%;"><i data-lucide="server"></i></div>
+        <div class="floating-icon tech-mongo" style="--delay: 4s; --x: 10%; --y: 70%;"><i data-lucide="database"></i>
+        </div>
+        <div class="floating-icon tech-code" style="--delay: 1s; --x: 85%; --y: 75%;"><i data-lucide="code-2"></i></div>
+        <div class="floating-icon tech-cpu" style="--delay: 3s; --x: 75%; --y: 45%;"><i data-lucide="cpu"></i></div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#about" class="scroll-indicator-arrow" aria-label="Scroll down to About section">
+        <span>Scroll Down</span>
+        <i data-lucide="chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- About Section (Bento Grid) -->
+    <section id="about" class="about-section section-padding">
+      <div class="section-container">
+        <div class="section-header align-center reveal-fade-up">
+          <span class="section-subtitle">Get To Know Me</span>
+          <h2 class="section-title">About My Journey</h2>
+          <div class="header-underline"></div>
+        </div>
+
+        <!-- Bento Grid Layout -->
+        <div class="bento-grid">
+
+          <!-- Big Card: Professional Intro -->
+          <div class="bento-card bento-col-2 bento-row-2 reveal-fade-up">
+            <div class="bento-card-bg-glow"></div>
+            <div class="bento-card-content">
+              <div class="bento-icon-wrapper">
+                <i data-lucide="user"></i>
+              </div>
+              <h3 class="bento-card-title">Who is Tharun H R?</h3>
+              <p class="bento-card-text">
+                I am a highly motivated Full Stack Developer specialized in the **MERN Stack** (MongoDB, Express.js,
+                React, Node.js), currently located in Mysuru, Karnataka, India. My passion lies in constructing
+                end-to-end, production-grade applications that solve real-world problems with maximum elegance.
+              </p>
+              <p class="bento-card-text">
+                From developing secure real-time communication tools using Socket.IO to architecting complex rental and
+                hospital platforms with payment portal systems, I pay immense attention to detail, security (JWT,
+                bcrypt), scalability, and premium user experience (UX). I love diving deep into new technologies and
+                crafting high-performance, responsive codebases.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card: Specialized Role -->
+          <div class="bento-card reveal-fade-up">
+            <div class="bento-card-bg-glow"></div>
+            <div class="bento-card-content justify-center align-center text-center">
+              <i data-lucide="layers" class="bento-card-large-icon text-gradient"></i>
+              <h3 class="bento-card-title margin-top-sm">MERN Specialist</h3>
+              <p class="bento-card-text-sm">
+                Architecting robust backends and premium frontends with consistent state management.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card: Location Info -->
+          <div class="bento-card reveal-fade-up">
+            <div class="bento-card-bg-glow"></div>
+            <div class="bento-card-content justify-center">
+              <div class="bento-icon-wrapper">
+                <i data-lucide="map-pin"></i>
+              </div>
+              <h3 class="bento-card-title">Based In</h3>
+              <p class="bento-card-highlight">Mysuru, Karnataka, India</p>
+              <p class="bento-card-text-sm">
+                Open to local roles and global remote collaborations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Wide Card: Statistics -->
+          <div class="bento-card bento-col-2 reveal-fade-up">
+            <div class="bento-card-bg-glow"></div>
+            <div class="bento-card-content">
+              <h3 class="bento-card-title">Key Accomplishments</h3>
+
+              <div class="stats-container">
+                <div class="stat-item">
+                  <span class="stat-number" data-target="4">0</span><span class="stat-plus">+</span>
+                  <span class="stat-label">Production Projects</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number" data-target="2">0</span><span class="stat-plus"></span>
+                  <span class="stat-label">Full Stack Internships</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number" data-target="25">0</span><span class="stat-plus">+</span>
+                  <span class="stat-label">Technologies Mastered</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card: Profile Photo -->
+          <div class="bento-card reveal-fade-up">
+            <div class="bento-card-bg-glow"></div>
+            <div class="bento-card-content bento-profile-card">
+              <div class="profile-img-frame">
+                <img src="/Portfolio/assets/profile-Bh2U5Fih.jpg" alt="Tharun H R Profile" class="profile-img-bento">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="tech-section section-padding">
+      <div class="section-container">
+        <div class="section-header align-center reveal-fade-up">
+          <span class="section-subtitle">My Toolbox</span>
+          <h2 class="section-title">Technical Expertise</h2>
+          <div class="header-underline"></div>
+        </div>
+
+        <div class="tech-grid">
+          <!-- Languages Card -->
+          <div class="tech-card reveal-fade-up">
+            <div class="tech-card-glow" style="--accent-glow: #eab308;"></div>
+            <div class="tech-card-header">
+              <i data-lucide="code" class="tech-icon-lang"></i>
+              <h3>Languages</h3>
+            </div>
+            <ul class="tech-list-tags">
+              <li>JavaScript</li>
+              <li>Java</li>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+            </ul>
+          </div>
+
+          <!-- Frontend Card -->
+          <div class="tech-card reveal-fade-up">
+            <div class="tech-card-glow" style="--accent-glow: #38bdf8;"></div>
+            <div class="tech-card-header">
+              <i data-lucide="layout" class="tech-icon-front"></i>
+              <h3>Frontend</h3>
+            </div>
+            <ul class="tech-list-tags">
+              <li>React.js</li>
+              <li>React Router</li>
+              <li>Context API</li>
+              <li>Tailwind CSS</li>
+              <li>Responsive Design</li>
+              <li>Leaflet</li>
+            </ul>
+          </div>
+
+          <!-- Backend Card -->
+          <div class="tech-card reveal-fade-up">
+            <div class="tech-card-glow" style="--accent-glow: #22c55e;"></div>
+            <div class="tech-card-header">
+              <i data-lucide="server" class="tech-icon-back"></i>
+              <h3>Backend</h3>
+            </div>
+            <ul class="tech-list-tags">
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>REST APIs</li>
+              <li>Socket.IO</li>
+              <li>JWT Auth</li>
+              <li>bcryptjs</li>
+              <li>Mongoose</li>
+            </ul>
+          </div>
+
+          <!-- Database Card -->
+          <div class="tech-card reveal-fade-up">
+            <div class="tech-card-glow" style="--accent-glow: #10b981;"></div>
+            <div class="tech-card-header">
+              <i data-lucide="database" class="tech-icon-db"></i>
+              <h3>Database</h3>
+            </div>
+            <ul class="tech-list-tags">
+              <li>MongoDB</li>
+              <li>MongoDB Atlas</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+
+          <!-- Cloud & Integrations Card -->
+          <div class="tech-card reveal-fade-up">
+            <div class="tech-card-glow" style="--accent-glow: #a855f7;"></div>
+            <div class="tech-card-header">
+              <i data-lucide="cloud" class="tech-icon-cloud"></i>
+              <h3>Cloud &amp; Integrations</h3>
+            </div>
+            <ul class="tech-list-tags">
+              <li>Razorpay</li>
+              <li>Cloudinary</li>
+              <li>Nodemailer</li>
+              <li>Multer</li>
+              <li>Helmet</li>
+              <li>OTP Authentication</li>
+            </ul>
+          </div>
+
+          <!-- Tools Card -->
+          <div class="tech-card reveal-fade-up">
+            <div class="tech-card-glow" style="--accent-glow: #64748b;"></div>
+            <div class="tech-card-header">
+              <i data-lucide="settings" class="tech-icon-tools"></i>
+              <h3>Tools &amp; Methodologies</h3>
+            </div>
+            <ul class="tech-list-tags">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>VS Code</li>
+              <li>Postman</li>
+              <li>Vite</li>
+              <li>npm</li>
+              <li>Agile</li>
+              <li>MVC</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section section-padding">
+      <div class="section-container">
+        <div class="section-header align-center reveal-fade-up">
+          <span class="section-subtitle">Portfolio Showcase</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="header-underline"></div>
+        </div>
+
+        <!-- Project Filtering Tabs -->
+        <div class="project-filters reveal-fade-up">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="mern">MERN Stack</button>
+          <button class="filter-btn" data-filter="socket">Real-Time</button>
+          <button class="filter-btn" data-filter="payment">Payment Gateway</button>
+          <button class="filter-btn" data-filter="python">Python / Flask</button>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="projects-grid">
+
+          <!-- Project 1: SafeGuard -->
+          <div class="project-card reveal-fade-up" data-tags="mern socket">
+            <div class="project-card-inner">
+              <div class="project-card-browser">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <span class="browser-address">safeguard.app</span>
+              </div>
+              <div class="project-image-container">
+                <img src="/Portfolio/assets/safeguard-ujDUC1Ow.svg" alt="SafeGuard App Mockup" class="project-img">
+                <div class="project-hover-overlay">
+                  <div class="project-hover-content">
+                    <span class="project-tag">Featured Project</span>
+                    <h4>SafeGuard SOS</h4>
+                    <p>Real-Time GPS Tracking & Emergency Alerts</p>
+                  </div>
+                </div>
+              </div>
+              <div class="project-details">
+                <h3 class="project-title">SafeGuard – Women Safety Platform</h3>
+                <ul class="project-bullets">
+                  <li>Built a MERN safety platform with role-based access (user, volunteer, admin) serving SOS alerts,
+                    live GPS tracking, and safe-zones.</li>
+                  <li>Implemented real-time Socket.IO rooms to broadcast distress alerts and live coordinates with
+                    sub-second latency.</li>
+                  <li>Designed secure REST APIs with JWT authentication, bcryptjs password hashing, and middleware-based
+                    route protection across 20+ endpoints.</li>
+                  <li>Engineered DB resilience using Mongoose with fallback to memory-server and an abuse-prevention
+                    system banning fake alarms.</li>
+                </ul>
+                <div class="project-badges">
+                  <span>MERN Stack</span>
+                  <span>Socket.IO</span>
+                  <span>JWT</span>
+                  <span>Leaflet</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://github.com/tharunhr29/Women-Safety-Emergency-Assistance-Platform" target="_blank"
+                    rel="noopener noreferrer" class="project-btn-git">
+                    <i data-lucide="github"></i> Code Source
+                  </a>
+                  <a href="https://women-safety-emergency-assistance-p-five.vercel.app/login" target="_blank"
+                    rel="noopener noreferrer" class="project-btn-demo">
+                    <i data-lucide="external-link"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: RentEase -->
+          <div class="project-card reveal-fade-up" data-tags="mern payment">
+            <div class="project-card-inner">
+              <div class="project-card-browser">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <span class="browser-address">rentease.in</span>
+              </div>
+              <div class="project-image-container">
+                <img src="/Portfolio/assets/rentease-Cu4hnKdq.svg" alt="RentEase App Mockup" class="project-img">
+                <div class="project-hover-overlay">
+                  <div class="project-hover-content">
+                    <span class="project-tag">Featured Project</span>
+                    <h4>RentEase</h4>
+                    <p>Furniture & Appliance Rentals with Razorpay</p>
+                  </div>
+                </div>
+              </div>
+              <div class="project-details">
+                <h3 class="project-title">RentEase – Appliance Rental Platform</h3>
+                <ul class="project-bullets">
+                  <li>Developed full-stack rental e-commerce platform supporting flexible 3/6/12-month tenures and
+                    city-based pricing.</li>
+                  <li>Built secure authentication with JWT, bcryptjs, Helmet, express-rate-limit, and OTP email
+                    verification (Nodemailer).</li>
+                  <li>Integrated Razorpay payment gateway, Cloudinary image uploads (Multer), and jsPDF invoice
+                    generation.</li>
+                  <li>Built admin dashboard for inventory, delivery slot scheduling, and tracking timeline (placed →
+                    shipped → active → returned).</li>
+                </ul>
+                <div class="project-badges">
+                  <span>React 19</span>
+                  <span>Node.js</span>
+                  <span>MongoDB</span>
+                  <span>Razorpay</span>
+                  <span>Cloudinary</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://github.com/tharunhr29/RentEase" target="_blank" rel="noopener noreferrer"
+                    class="project-btn-git">
+                    <i data-lucide="github"></i> Code Source
+                  </a>
+                  <a href="https://rent-ease-5zlh.vercel.app/" target="_blank" rel="noopener noreferrer"
+                    class="project-btn-demo">
+                    <i data-lucide="external-link"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: SmartCare -->
+          <div class="project-card reveal-fade-up" data-tags="mern socket payment">
+            <div class="project-card-inner">
+              <div class="project-card-browser">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <span class="browser-address">smartcare.org</span>
+              </div>
+              <div class="project-image-container">
+                <img src="/Portfolio/assets/smartcare-BhnNaD4P.svg" alt="SmartCare App Mockup" class="project-img">
+                <div class="project-hover-overlay">
+                  <div class="project-hover-content">
+                    <span class="project-tag">Featured Project</span>
+                    <h4>SmartCare</h4>
+                    <p>Real-Time Queueing & Patient Management</p>
+                  </div>
+                </div>
+              </div>
+              <div class="project-details">
+                <h3 class="project-title">SmartCare – Hospital Queue System</h3>
+                <ul class="project-bullets">
+                  <li>Built MERN queue management system featuring patient registration and appointment booking.</li>
+                  <li>Implemented real-time patient queue updates and token tracking via Socket.IO.</li>
+                  <li>Integrated secure Razorpay payment gateway for online appointment pre-payments.</li>
+                </ul>
+                <div class="project-badges">
+                  <span>MERN Stack</span>
+                  <span>Socket.IO</span>
+                  <span>Razorpay</span>
+                  <span>State Sync</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://github.com/tharunhr29" target="_blank" rel="noopener noreferrer"
+                    class="project-btn-git">
+                    <i data-lucide="github"></i> Code Source
+                  </a>
+                  <a href="#" class="project-btn-demo"
+                    onclick="event.preventDefault(); alert('SmartCare queue management panel runs fully synchronised with live token status boards.');">
+                    <i data-lucide="external-link"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Krishi -->
+          <div class="project-card reveal-fade-up" data-tags="python database">
+            <div class="project-card-inner">
+              <div class="project-card-browser">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <span class="browser-address">krishirentals.in</span>
+              </div>
+              <div class="project-image-container">
+                <img src="/Portfolio/assets/krishi-54sft-yw.svg" alt="Krishi App Mockup" class="project-img">
+                <div class="project-hover-overlay">
+                  <div class="project-hover-content">
+                    <span class="project-tag">Flask &amp; SQL Project</span>
+                    <h4>Krishi</h4>
+                    <p>Agro Machinery Rental Platform with QC Locks &amp; Fines</p>
+                  </div>
+                </div>
+              </div>
+              <div class="project-details">
+                <h3 class="project-title">Krishi – Agro Machinery Rental</h3>
+                <ul class="project-bullets">
+                  <li>Built a secure agricultural machinery rental web application using Python 3 and the Flask
+                    Framework with Jinja2 Templating.</li>
+                  <li>Designed a robust database architecture using Flask-SQLAlchemy with SQLite for local development
+                    and PostgreSQL/MySQL for production support.</li>
+                  <li>Implemented core business rules for rental costing, holding upfront rents/deposits, and automated
+                    damage fine deductions upon returns.</li>
+                  <li>Engineered a QC-Locked inventory system flagging returned machinery as return_pending_qc until
+                    inspection approval.</li>
+                </ul>
+                <div class="project-badges">
+                  <span>Flask</span>
+                  <span>SQLAlchemy</span>
+                  <span>Jinja2</span>
+                  <span>Flask-Login</span>
+                  <span>Flask-Migrate</span>
+                  <span>SQLite</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://github.com/tharunhr29/Krishi-Rental-Platform" target="_blank"
+                    rel="noopener noreferrer" class="project-btn-git">
+                    <i data-lucide="github"></i> Code Source
+                  </a>
+                  <a href="https://krishi-rental-platform.onrender.com/" target="_blank" rel="noopener noreferrer"
+                    class="project-btn-demo">
+                    <i data-lucide="external-link"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section (Timeline) -->
+    <section id="experience" class="experience-section section-padding">
+      <div class="section-container">
+        <div class="section-header align-center reveal-fade-up">
+          <span class="section-subtitle">Professional Path</span>
+          <h2 class="section-title">Work Experience</h2>
+          <div class="header-underline"></div>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <!-- Experience Item 1 -->
+          <div class="timeline-item reveal-fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">MARCH 2026 - JUNE 2026</span>
+              <h3 class="timeline-role">Full Stack Web Developer Intern</h3>
+              <h4 class="timeline-company text-gradient">Unified Mentor Pvt. Ltd</h4>
+              <ul class="timeline-responsibilities">
+                <li>Built interactive, responsive client applications using React.js.</li>
+                <li>Developed secure backend REST APIs utilizing Node.js and Express.js.</li>
+                <li>Designed flexible data structures and integrations inside MongoDB databases.</li>
+                <li>Implemented clean UI components resulting in 30% speed increases on mobile viewport devices.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience Item 2 -->
+          <div class="timeline-item reveal-fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">MARCH 2026 - JUNE 2026</span>
+              <h3 class="timeline-role">Python &amp; Full Stack Development Intern</h3>
+              <h4 class="timeline-company text-gradient-cyan">Mindset Pvt. Ltd</h4>
+              <ul class="timeline-responsibilities">
+                <li>Developed modular, object-oriented python structures for data management systems.</li>
+                <li>Built custom full-stack dashboard modules using Vanilla frontend and Node.js backend.</li>
+                <li>Collaborated in dynamic team meetings using Agile methodologies, sprint planning, and task checkins.
+                </li>
+                <li>Managed repository tracking and source controls securely using Git and GitHub.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section section-padding">
+      <div class="section-container">
+        <div class="section-header align-center reveal-fade-up">
+          <span class="section-subtitle">Academic Credentials</span>
+          <h2 class="section-title">Education</h2>
+          <div class="header-underline"></div>
+        </div>
+
+        <div class="education-grid">
+
+          <!-- College 1 -->
+          <div class="education-card reveal-fade-up">
+            <div class="edu-glow"></div>
+            <div class="edu-card-content">
+              <div class="edu-icon"><i data-lucide="graduation-cap"></i></div>
+              <span class="edu-year">2024 - 2026 (Expected)</span>
+              <h3>Vidhyavardhaka College of Engineering</h3>
+              <p class="edu-degree">Bachelor's Degree in Computer Science / Engineering Path</p>
+              <p class="edu-loc">Mysuru, Karnataka, India</p>
+            </div>
+          </div>
+
+          <!-- College 2 -->
+          <div class="education-card reveal-fade-up">
+            <div class="edu-glow"></div>
+            <div class="edu-card-content">
+              <div class="edu-icon"><i data-lucide="award"></i></div>
+              <span class="edu-year">2021 - 2024</span>
+              <h3>BGS First Grade College</h3>
+              <p class="edu-degree">Bachelor of Computer Applications (BCA)</p>
+              <p class="edu-gpa">CGPA: <strong>9.35 / 10</strong></p>
+              <p class="edu-loc">Mysuru, Karnataka, India</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certs-section section-padding">
+      <div class="section-container">
+        <div class="section-header align-center reveal-fade-up">
+          <span class="section-subtitle">Validated Skills</span>
+          <h2 class="section-title">Certifications</h2>
+          <div class="header-underline"></div>
+        </div>
+
+        <div class="certs-grid">
+
+          <!-- Cert 1 -->
+          <div class="cert-card reveal-fade-up">
+            <div class="cert-icon-box"><i data-lucide="badge-check"></i></div>
+            <h3>Programming with JavaScript</h3>
+            <p class="cert-issuer">Meta / Coursera</p>
+            <span class="cert-meta">JavaScript Core Syntax, OOP, Testing (Jest)</span>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card reveal-fade-up">
+            <div class="cert-icon-box"><i data-lucide="award"></i></div>
+            <h3>Full Stack Web Development</h3>
+            <p class="cert-issuer">freeCodeCamp</p>
+            <span class="cert-meta">HTML/CSS, MERN Stack Architectures, API design</span>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card reveal-fade-up">
+            <div class="cert-icon-box"><i data-lucide="file-code"></i></div>
+            <h3>Introduction to HTML</h3>
+            <p class="cert-issuer">Sololearn</p>
+            <span class="cert-meta">Semantic HTML5, Document Structures &amp; SEO best practices</span>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card reveal-fade-up">
+            <div class="cert-icon-box"><i data-lucide="globe"></i></div>
+            <h3>WordPress</h3>
+            <p class="cert-issuer">Mindset Pvt. Ltd</p>
+            <span class="cert-meta">CMS Deployment, Custom Styling, SEO Setup</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="section-container">
+        <div class="section-header align-center reveal-fade-up">
+          <span class="section-subtitle">Let's Connect</span>
+          <h2 class="section-title">Let's Build Something Amazing Together</h2>
+          <div class="header-underline"></div>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Contact Info Pane -->
+          <div class="contact-info-pane reveal-fade-up">
+            <h3>Contact Information</h3>
+            <p>Feel free to reach out for internship inquiries, project collaborations, or developer openings. I am
+              always open to exchanging tech ideas!</p>
+
+            <div class="contact-details-list">
+              <div class="contact-detail-item">
+                <div class="detail-icon"><i data-lucide="mail"></i></div>
+                <div class="detail-text">
+                  <span>Email Me</span>
+                  <a href="mailto:tharunhr29@gmail.com">tharunhr29@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="detail-icon"><i data-lucide="phone"></i></div>
+                <div class="detail-text">
+                  <span>Call Me</span>
+                  <a href="tel:+918431935272">+91 8431935272</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="detail-icon"><i data-lucide="map-pin"></i></div>
+                <div class="detail-text">
+                  <span>Location</span>
+                  <p>Mysuru, Karnataka, India</p>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="detail-icon"><i data-lucide="linkedin"></i></div>
+                <div class="detail-text">
+                  <span>LinkedIn</span>
+                  <a href="https://linkedin.com/in/tharun-h-r" target="_blank"
+                    rel="noopener noreferrer">linkedin.com/in/tharun-h-r</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="detail-icon"><i data-lucide="github"></i></div>
+                <div class="detail-text">
+                  <span>GitHub</span>
+                  <a href="https://github.com/tharunhr29" target="_blank"
+                    rel="noopener noreferrer">github.com/tharunhr29</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links Grid -->
+            <div class="social-links-grid">
+              <a href="https://github.com/tharunhr29" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub Profile"><i data-lucide="github"></i></a>
+              <a href="https://linkedin.com/in/tharun-h-r" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn Profile"><i data-lucide="linkedin"></i></a>
+              <a href="mailto:tharunhr29@gmail.com" aria-label="Email Address"><i data-lucide="mail"></i></a>
+            </div>
+          </div>
+
+          <!-- Contact Form Pane -->
+          <div class="contact-form-pane reveal-fade-up">
+            <form id="contact-form" class="modern-contact-form" novalidate>
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="form-name">Your Name</label>
+                  <input type="text" id="form-name" placeholder="John Doe" required>
+                  <span class="form-error-msg">Name is required</span>
+                </div>
+                <div class="form-group">
+                  <label for="form-email">Your Email</label>
+                  <input type="email" id="form-email" placeholder="john@example.com" required>
+                  <span class="form-error-msg">Valid email is required</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <input type="text" id="form-subject" placeholder="Project Inquiry / Job Opportunity" required>
+                <span class="form-error-msg">Subject is required</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <textarea id="form-message" rows="6" placeholder="Hi Tharun, I would like to discuss..."
+                  required></textarea>
+                <span class="form-error-msg">Message cannot be empty</span>
+              </div>
+
+              <button type="submit" id="form-submit-btn" class="form-submit-button">
+                <span>Send Message</span> <i data-lucide="send"></i>
+              </button>
+            </form>
+
+            <!-- Success Alert Overlay -->
+            <div id="form-success-overlay" class="form-success-overlay">
+              <div class="success-card">
+                <div class="success-icon-circle">
+                  <i data-lucide="check"></i>
+                </div>
+                <h3>Message Sent Successfully!</h3>
+                <p>Thank you for reaching out, Tharun will get back to you shortly.</p>
+                <button id="success-close-btn" class="btn-primary-sm">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="portfolio-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="footer-logo">
+          <span class="logo-accent">&lt;</span>THARUN H R<span class="logo-accent"> /&gt;</span>
+        </a>
+        <p>Full Stack MERN Developer building state-of-the-art SaaS integrations and secure responsive user experiences.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#tech-stack">Tech Stack</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-socials">
+        <h4>Connect</h4>
+        <div class="footer-icons">
+          <a href="https://github.com/tharunhr29" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+              data-lucide="github"></i></a>
+          <a href="https://linkedin.com/in/tharun-h-r" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+          <a href="mailto:tharunhr29@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Tharun H R. All rights reserved. Created with premium Glassmorphism UI design.</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+</body>
+
+</html>
